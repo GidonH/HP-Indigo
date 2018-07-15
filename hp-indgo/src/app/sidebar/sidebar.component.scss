@@ -1,0 +1,42 @@
+:host{
+  flex-basis: 25%;
+  transform-origin: left;
+  transition: 1s;
+  @media all and (max-width: 1280px){
+    position: fixed;
+    min-width: 240px;
+    transform: rotateY(-90deg);
+    box-shadow: 1px 8px 11px 3px grey;
+    z-index: 10;
+  }
+}
+.in :host{
+  transform: rotateY(0deg);
+}
+h1{
+  color: white;
+  background-color: #575757;
+  margin: 9px 0 0 0;
+  padding: 22px 12px 26px 12px;
+  font-weight: 100;
+}
+ul{
+  li{
+    padding: 15px;
+    border-bottom: 1px solid lightgray;
+    background-color: white;
+    &.active{
+      color: white;
+      background-color: #387bb5;
+    }
+  }
+  .arrow{
+    float: right;
+    font-size: 23px;
+    font-weight: bold;
+  }
+}
+footer{
+  background-color: #575757;
+  height: 120px;
+}
