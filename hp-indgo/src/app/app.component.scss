@@ -1,4 +1,13 @@
-.body-wrapper{
-  display: flex;
-  perspective: 500px;
+:host-context(.in) main{
+  @media (max-width: 1280px) {
+    transform: translateX(265px);
+  }
+}
+main{
+  text-align: center;
+  margin-left: 265px;
+  transition: .5s ease-out;
+  @media (max-width: 1280px) {
+   margin-left: 0;
+  }
 }

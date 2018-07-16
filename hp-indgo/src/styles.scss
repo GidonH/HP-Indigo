@@ -1,6 +1,7 @@
 body {
   font-family: sans-serif;
   margin: 0;
+  overflow: hidden;
 }
 ul{
   list-style: none;
@@ -9,4 +10,7 @@ ul{
 }
 img{
   max-width: 100%;
+}
+*:focus{
+  outline: none;
 }
